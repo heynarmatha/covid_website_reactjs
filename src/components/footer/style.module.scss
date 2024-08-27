@@ -1,0 +1,131 @@
+@import "../../scss/mixins/breakpoints";
+
+.footerWrapper {
+  text-align: center;
+  background-color: rgba(255, 249, 249, 0.411);
+  position: relative;
+
+  .footerSection {
+    padding: 2rem 15px;
+
+    @include media-min-lg {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @include media-min-xl {
+      width: 80%;
+      margin: 0 auto;
+      padding: 4rem 0;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      padding: 10px 0;
+
+      @include media-min-lg {
+        padding: 0;
+      }
+
+      img {
+        width: 50px;
+        object-fit: cover;
+      }
+
+      h5 {
+        font-size: 19px;
+        color: #035755;
+        margin-left: 8px;
+
+        @include media-min-xl-x {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .footerLinks {
+      ul {
+        padding: 10px 0;
+
+        @include media-min-lg {
+          padding: 0;
+          display: flex;
+          align-items: center;
+        }
+
+        li {
+          list-style-type: none;
+          padding: 10px 0;
+
+          @include media-min-lg {
+            margin-left: 20px;
+          }
+
+          a {
+            font-size: 20px;
+            color: #035755;
+            text-decoration: none;
+            padding: 0 5px;
+
+            &:hover {
+              color: #fb4c47;
+            }
+          }
+        }
+      }
+    }
+
+    .footerIcon {
+      color: #035755;
+      margin-top: 20px;
+
+      @include media-min-lg {
+        margin-top: 0;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media-min-lg {
+          padding: 0px;
+        }
+
+        li {
+          list-style-type: none;
+          padding: 10px 0;
+
+          a {
+            font-size: 20px;
+            color: #035755;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .youtubeIcon {
+        color: #fb4c47;
+      }
+
+      i {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .copyrightsSection {
+    color: #035755;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+
+    @include media-min-xl {
+      font-size: 20px;
+    }
+  }
+}
