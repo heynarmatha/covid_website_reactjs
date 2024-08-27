@@ -1,0 +1,229 @@
+@import "../../scss/mixins/breakpoints";
+
+.bannerSectionWrapper {
+  background-color: rgb(255, 249, 249);
+  padding: 15px 0;
+
+  .bannerSection {
+    @include media-min-md {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .bannerImage {
+      padding: 20px 0;
+    }
+
+    .bannerContent {
+      text-align: center;
+      padding: 15px;
+
+      @include media-min-md {
+        text-align: left;
+      }
+
+      @include media-min-xl {
+        margin-left: 10%;
+        padding: 0;
+      }
+
+      h5 {
+        color: #fa5652;
+        font-size: 18px;
+        padding-bottom: 8px;
+        font-weight: 800;
+
+        @include media-min-lg {
+          font-size: 20px;
+        }
+
+        @include media-min-xl {
+          font-size: 25px;
+        }
+
+        @include media-min-xl-x {
+          font-size: 30px;
+        }
+      }
+
+      h3 {
+        color: rgb(0, 94, 94);
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 800;
+        text-transform: capitalize;
+
+        @include media-min-lg {
+          font-size: 2rem;
+        }
+
+        @include media-min-xl {
+          width: 70%;
+          font-size: 2.3rem;
+        }
+
+        @include media-min-xl-x {
+          font-size: 3.2rem;
+          width: 75%;
+        }
+      }
+
+      p {
+        padding: 12px 0;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: #4b4f51;
+        line-height: 2;
+        font-size: 16px;
+        word-spacing: 3px;
+
+        @include media-min-lg {
+          font-size: 18px;
+        }
+
+        @include media-min-xl-x {
+          font-size: 22px;
+          width: 75%;
+          padding: 25px 0;
+        }
+      }
+
+      button {
+        background-color: #fa5652;
+        border: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 800;
+        word-spacing: 3px;
+        margin-top: 10px;
+        padding: 10px 30px;
+        border-radius: 40px;
+        cursor: pointer;
+
+        @include media-min-lg {
+          font-size: 18px;
+        }
+
+        @include media-min-xl-x {
+          padding: 25px 60px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+.detailsCoronaWrapper {
+  padding: 15px;
+  background-color: #ffffff;
+  position: relative;
+
+  .detailsSection {
+    @include media-min-md {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 0;
+    }
+
+    @include media-min-xl {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .detailsImage {
+      padding: 10px 0;
+
+      @include media-min-md {
+        width: 48%;
+        padding: 0;
+      }
+    }
+
+    .detailsContent {
+      text-align: center;
+      padding: 15px;
+
+      @include media-min-md {
+        width: 48%;
+        text-align: left;
+        padding: 0;
+      }
+
+      h5 {
+        color: #fa5652;
+        font-size: 20px;
+        padding-bottom: 8px;
+        font-weight: 800;
+
+        @include media-min-xl-x {
+          font-size: 30px;
+        }
+      }
+
+      h3 {
+        color: rgb(0, 94, 94);
+        font-size: 35px;
+
+        @include media-min-xl-x {
+          font-size: 3.5rem;
+        }
+      }
+
+      p {
+        color: #4b4f51;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 2;
+        padding: 15px 0;
+        text-transform: capitalize;
+
+        @include media-min-xl-x {
+          font-size: 20px;
+          line-height: 2.5;
+        }
+      }
+
+      button {
+        background-color: rgb(255, 232, 232);
+        border: none;
+        color: #fa5652;
+        font-size: 15px;
+        font-weight: 800;
+        word-spacing: 3px;
+        margin-top: 10px;
+        padding: 10px 30px;
+        border-radius: 40px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #fa5652;
+          color: white;
+        }
+
+        @include media-min-lg {
+          font-size: 18px;
+        }
+
+        @include media-min-xl-x {
+          padding: 25px 60px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .postion2 {
+    display: none;
+    z-index: 2;
+
+    @include media-min-xl {
+      display: block;
+      position: absolute;
+      top: 70%;
+      right: 0;
+    }
+  }
+}

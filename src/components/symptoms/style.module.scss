@@ -1,0 +1,206 @@
+@import "../../scss/mixins/breakpoints";
+.symptompsSectionWrapper {
+  padding: 15px;
+  background-color: #ffffff;
+  position: relative;
+
+  @include media-min-xl {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .leftImage {
+    display: none;
+
+    @include media-min-xl {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+    }
+  }
+
+  .symptompsImage {
+    @include media-min-lg {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @include media-min-xl {
+      width: 60%;
+      margin: 0 auto 20px;
+    }
+  }
+
+  .rightImage {
+    display: none;
+
+    @include media-min-xl {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 10%;
+    }
+  }
+}
+.covidContentComman {
+  text-align: center;
+  padding: 1.5rem 0;
+  h5 {
+    color: #fa5652;
+    font-size: 20px;
+    padding-bottom: 8px;
+    font-weight: 800;
+    @include media-min-lg {
+      font-size: 25px;
+    }
+  }
+  h3 {
+    color: rgb(0, 94, 94);
+    font-size: 1.9rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+    @include media-min-lg {
+      font-size: 2.5rem;
+    }
+    @include media-min-xl-x {
+      font-size: 3rem;
+    }
+  }
+  p {
+    color: #4b4f51;
+    line-height: 1.8;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    @include media-min-md {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include media-min-lg {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+    @include media-min-xl {
+      width: 65%;
+    }
+    @include media-min-xl-x {
+      width: 50%;
+    }
+  }
+}
+.mapSectionWrapper {
+  padding: 15px;
+  background-color: #ffffff;
+
+  @include media-min-xl {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .mapSection {
+    @include media-min-lg {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mapImage {
+      @include media-min-lg {
+        width: 60%;
+      }
+    }
+
+    .liveReport {
+      margin-top: 2rem;
+      background-color: rgb(254, 252, 253);
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+      padding: 20px;
+
+      @include media-min-lg {
+        width: 35%;
+      }
+
+      .reportHeading {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+          color: rgba(3, 87, 85, 1);
+          font-size: 25px;
+          padding: 10px 0;
+        }
+
+        .next {
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+            rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+            rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+          padding: 5px 8px;
+          font-size: 30px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4b4f51;
+          }
+
+          .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fa5652;
+          }
+        }
+      }
+
+      .reportOne {
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .country {
+          display: flex;
+          align-items: center;
+
+          span {
+            color: rgba(3, 87, 85, 1);
+            font-weight: 700;
+            font-size: 20px;
+            margin-left: 8px;
+
+            @include media-min-md {
+              margin-left: 15px;
+            }
+          }
+        }
+
+        .reportCount {
+          .count {
+            color: rgba(3, 87, 85, 1);
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          .upDown {
+            color: #fa5652;
+            padding: 0 5px;
+            font-size: 18px;
+
+            @include media-min-md {
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
